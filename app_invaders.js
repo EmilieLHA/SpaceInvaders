@@ -133,7 +133,7 @@ function bougerLesAliens(){
         if(toutesLesDivs[tireurPosition].classList.contains('alien')){
             affichage.innerText='Game Over';
             affichage.style.color = "orange";
-            affichage.style.fontSize = "50px";
+            affichage.style.fontSize = "25px";
             toutesLesDivs[tireurPosition].classList.add('boom');
             clearInterval(invaderInterval);
             document.removeEventListener("keydown", tirer);
@@ -143,7 +143,7 @@ function bougerLesAliens(){
             if(allInvaders[i]> toutesLesDivs.length -  width){
                 affichage.textContent = 'Game Over';
                 affichage.style.color = "orange";
-                affichage.style.fontSize = "50px";
+                affichage.style.fontSize = "25px";
                 clearInterval(invaderInterval);
                 document.removeEventListener("keydown", tirer);
             }
@@ -151,7 +151,7 @@ function bougerLesAliens(){
 
 }
 
-invaderInterval = setInterval(bougerLesAliens, 200);
+invaderInterval = setInterval(bougerLesAliens, 400);
 
 // Création du laser 
 
@@ -198,3 +198,10 @@ function tirer(e) {
 }
 
 document.addEventListener('keydown', tirer);
+
+//Rechargement du jeu
+let button = document.querySelector('.myButton');
+
+button.addEventListener('click', () => {
+    document.location.reload();
+})

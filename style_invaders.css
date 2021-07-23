@@ -11,7 +11,6 @@ h1 {
 }
 
 p {
-    text-align: center;
     color: white;
     font-family: 'Roboto', sans-serif;
 }
@@ -43,7 +42,7 @@ h3 {
     margin: 20px 0;
     font-family: 'Press Start 2P', cursive;
     color: violet;
-    padding-bottom: 50px;
+    padding-bottom: 60px;
 }
 
 .grille div {
@@ -71,3 +70,30 @@ h3 {
 .laser {
     background-color: orange;
 }
+
+.infos {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.myButton {
+	box-shadow:inset 0px 1px 0px 0px #a4e271;
+	background:linear-gradient(to bottom, #89c403 5%, #77a809 100%);
+	background-color:#89c403;
+	border-radius:16px;
+	border:1px solid #74b807;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family: 'Press Start 2P', cursive;
+	font-size:15px;
+	font-weight:bold;
+	padding:19px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #528009;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #77a809 5%, #89c403 100%);
+	background-color:#77a809;
+}
+
